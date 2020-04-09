@@ -2,10 +2,36 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("1. Wall-E");
-        System.out.println("2. Click");
-        System.out.println("3. Killer Bean");
-        System.out.println("4. Foodfight");
-        System.out.println("5. Little Rascals");
+        int myFavNum = 46293;
+
+        System.out.println(myFavNum);
+
+        boolean livesInAlbertville = false;
+
+        System.out.println(livesInAlbertville);
+
+        byte amtOfCookie = 12;
+
+        System.out.println(amtOfCookie);
+
+        char favLetter = 'R';
+
+        System.out.println(favLetter);
+
+        short amtOfPets = 24333;
+
+        System.out.println(amtOfPets);
+
+        long worldPopulation = 70000000;
+
+        System.out.println(worldPopulation);
+
+        float amtOfSocks = 5;
+
+        System.out.println(amtOfSocks);
+
+        double smallNumber = 0.35633;
+
+        System.out.println(smallNumber);
     }
 }
