@@ -15,14 +15,12 @@ public class App {
         for (int c = 50; c >= 5; c = c -5) {
             System.out.println(c);
         }
-        for (int b = 11; b <= 12; b = b +1) {
-            System.out.println("The count is " + b);
-            System.out.println();
+        for (int b = 1; b <= 9; b = b +1) {
+            System.out.println(b * b);
+            System.out.println(b + 3);
+            System.out.println(b);
         }
-        for (int t = 10; t <= 0; t = t -1) {
-            System.out.println("The count is " + t);
-            System.out.println("Let's keep counting.");
-        }
+
     }
 }
         
