@@ -2,32 +2,30 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Double or single digit?");
-        for (int g = 20; g >=1; g--){
-            if (g >= 10){
-                System.out.println(g + " is a double digit");
-            
-            }else{
-                System.out.println(g + " is a single digit");
-            }}
-        
-            System.out.println("Nice!");
-            System.out.println("Fast food");
-        for (int f = 1; f <= 10; f++){
-        if (f % 2 == 0){
-                System.out.println("Fries");
-           }
-           else{
-               System.out.println("Burgers");
-           }
-        } 
-        System.out.println("Nice!"); 
-    }
+           System.out.println("Start first loop");
+            for (int r = 1; r <=10; r ++){
+                if (r == 5){
+                System.out.println("five");
+                }
+            else{
+                System.out.println(r);
+            }
+     }
+        System.out.println("End First loop");
+        System.out.println("Start second loop");
+        for (int l = 10; l <= 20; l ++){
+            if (l == 16){
+                for (int k = 151; k <= 159; k ++){
+                    System.out.println(k);
+             } }
+                 System.out.println(l * 10);
+
+
+        }
+        System.out.println("End second loop");}}
 
 
 
-
-}
         
     
 
