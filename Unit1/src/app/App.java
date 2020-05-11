@@ -12,24 +12,24 @@ public class App {
         System.out.println("Type a second number");
         int num2 = input.nextInt();
 
-        System.out.println("Enter a function");
-        String function = input.nextLine();
+        System.out.println("Type 1 for Addition, 2 for multiplication, 3 for subtraction, and 4 for division.");
+        int function = input.nextInt();
 
-        if (function.equals("+")){
+                if (function == 1){
             System.out.println(num1 + num2);
         }
-
-        if (function.equals("*"))    {
+        if (function == 2){
             System.out.println(num1 * num2);
-        }
-
-        if (function.equals("-")){
+    }
+if (function == 3){
             System.out.println(num1 - num2);
-                }
+        }
+        if (function == 4){
+            System.out.println(num1 / num2);
 
-        if (function.equals("/")){
-         System.out.println(num1 / num2);
         }}}
+
+
 
 
         
