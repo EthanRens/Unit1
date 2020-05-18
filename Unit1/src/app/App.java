@@ -4,30 +4,37 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        Dog dog3 = new Dog();
+
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Type a number");
-        int num1 = input.nextInt();
+        dog1.name = "Joe";
+        dog1.age = 4;
+        dog1.breed = "Dalmation";
 
-        System.out.println("Type a second number");
-        int num2 = input.nextInt();
+        dog2.name = "Mike";
+        dog2.age = 12;
+        dog2.breed = "Lab";
 
-        System.out.println("Type 1 for Addition, 2 for multiplication, 3 for subtraction, and 4 for division.");
-        int function = input.nextInt();
+        dog3.name = "John";
+        dog3.age = 3;
+        dog3.breed = "Pug";
 
-                if (function == 1){
-            System.out.println(num1 + num2);
-        }
-        if (function == 2){
-            System.out.println(num1 * num2);
-    }
-if (function == 3){
-            System.out.println(num1 - num2);
-        }
-        if (function == 4){
-            System.out.println(num1 / num2);
+        System.out.println(dog1.name);
+        System.out.println(dog1.age);
+        System.out.println(dog1.breed);
 
-        }}}
+        System.out.println(dog2.name);
+        System.out.println(dog2.age);
+        System.out.println(dog2.breed);
+
+        System.out.println(dog3.name);
+        System.out.println(dog3.age);
+        System.out.println(dog3.breed);
+
+        }}
 
 
 
