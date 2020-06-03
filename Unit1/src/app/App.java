@@ -4,51 +4,53 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Person person1 = new Person();
-
-        Dog dog1 = new Dog();
-        Dog dog2 = new Dog();
-        Dog dog3 = new Dog();
-
         Scanner input = new Scanner(System.in);
 
-        person1.name = "Dan";
-        person1.age = 25;
-        person1.eyeColor = "green";
-        person1.height = "6 feet";
-        person1.amtOfArms = 2;
-        person1.birthday = "Febuary 2nd";
+        System.out.println("What is your name?");
+        String name = input.nextLine();
 
-        dog1.name = "Joe";
-        dog1.age = 4;
-        dog1.breed = "Dalmation";
+        System.out.println("How much money are you starting with?");
+        int money = input.nextInt();
 
-        dog2.name = "Mike";
-        dog2.age = 12;
-        dog2.breed = "Lab";
+        System.out.println("Please enter a password.");
+        String pass = input.nextLine();
 
-        dog3.name = "John";
-        dog3.age = 3;
-        dog3.breed = "Pug";
+        System.out.println("Account created, please log in.");
 
-        System.out.println(person1.name);
-        System.out.println(person1.age);
-        System.out.println(person1.amtOfArms);
-        System.out.println(person1.birthday);
-        System.out.println(person1.height);
-        System.out.println(person1.eyeColor);
+        System.out.println("Enter your name");
+        String nameInput = input.nextLine();
+        if(nameInput.equals(name)){
+            System.out.println("Enter your password.");
+            String passInput = input.nextLine();
+            if(passInput.equals(pass)){
+                System.out.println("Access granted, welcome " + name);
+                String access = "true";
+            } else {
+                System.out.println("Access denied");
+            }
+        } else {
+            System.out.println("Access denied");
+        }
 
-        System.out.println(dog1.name);
-        System.out.println(dog1.age);
-        System.out.println(dog1.breed);
-
-        System.out.println(dog2.name);
-        System.out.println(dog2.age);
-        System.out.println(dog2.breed);
-
-        System.out.println(dog3.name);
-        System.out.println(dog3.age);
-        System.out.println(dog3.breed);
+        if(access.equals("true")){
+            System.out.println("What would you like to do? Press 1 to check balance, press 2 to withdraw money, press 3 to change password.");
+            String answer = input.nextLine();
+            if(answer.equals("1")){
+                System.out.println("Your balance is currently, " + money);
+            } if(answer.equals("2")){
+                System.out.println("How much money would you like to withdraw?");
+                int amt = input.nextInt();
+                System.out.println("You withdrew " + amt + " dollars, your current ballance is now " + (money - amt) + ".");
+            } if(answer.equals("3")){
+                System.out.println("Please enter your new password.");
+                String pass2 = input.nextLine();
+                System.out.println("Your new password is " + pass2);
+            } else {
+                System.out.println("ERROR");
+            }
+        } else {
+            System.out.println();
+        }
 
         }}
 
