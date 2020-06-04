@@ -6,11 +6,14 @@ public class App {
 
         Scanner input = new Scanner(System.in);
 
+        Boolean switchA = false;
+        
         System.out.println("What is your name?");
         String name = input.nextLine();
 
         System.out.println("How much money are you starting with?");
         int money = input.nextInt();
+        input.nextLine();
 
         System.out.println("Please enter a password.");
         String pass = input.nextLine();
@@ -23,8 +26,8 @@ public class App {
             System.out.println("Enter your password.");
             String passInput = input.nextLine();
             if(passInput.equals(pass)){
+                switchA = true;
                 System.out.println("Access granted, welcome " + name);
-                String access = "true";
             } else {
                 System.out.println("Access denied");
             }
@@ -32,7 +35,7 @@ public class App {
             System.out.println("Access denied");
         }
 
-        if(access.equals("true")){
+        if ( switchA == true){
             System.out.println("What would you like to do? Press 1 to check balance, press 2 to withdraw money, press 3 to change password.");
             String answer = input.nextLine();
             if(answer.equals("1")){
@@ -43,15 +46,10 @@ public class App {
                 System.out.println("You withdrew " + amt + " dollars, your current ballance is now " + (money - amt) + ".");
             } if(answer.equals("3")){
                 System.out.println("Please enter your new password.");
-                String pass2 = input.nextLine();
-                System.out.println("Your new password is " + pass2);
-            } else {
-                System.out.println("ERROR");
+                pass = input.nextLine();
+                System.out.println("Your new password is " + pass);
+            } 
             }
-        } else {
-            System.out.println();
-        }
-
         }}
 
 
